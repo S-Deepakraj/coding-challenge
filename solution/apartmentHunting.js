@@ -58,9 +58,5 @@ function apartmentHunting(blocks, reqs) {
   return optimalBlock;
 }
 
-
 // Do not edit the line below.
 exports.apartmentHunting = apartmentHunting;
-
-
-
