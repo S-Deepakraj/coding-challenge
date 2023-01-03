@@ -1,5 +1,11 @@
 # coding-challenge
 
+Read the problem description below.
+For solution, visit solution/apartmentHunting.js file
+For explanation, visit explanation/apartmentHunting.txt file
+
+
+
 PROBLEM DESCRIPTION:
 
 You're looking to move into a new apartment on specific street, and you're given a list of contiguous blocks on that street where
