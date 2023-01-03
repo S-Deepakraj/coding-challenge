@@ -1,0 +1,31 @@
+Algorithm:
+
+step1: 
+
+    First, we take the block and find the minimum distance of each requirement from that block using Finding_Distance function. Push the found distance in the array called DISTANCE.
+
+    -->Finding_Distance (the function which finds the minimum distance of the given REQUIREMENT from the given BLOCK)
+    
+    step_1.1:
+        a) This function needs input of the REQUIREMENT and the BLOCK
+        b) --> If the given BLOCK itself have the REQUIREMENT building (REQUIREMENT === true), it returns 0
+           --> else it looks for the previous blocks as well as the next blocks.
+                    --> if it finds in the block(currentBlock) next to the given BLOCK, it will return (currentBlock index - BLOCK index) 
+                    --> if it finds in the block(currentBlock) previous to the given BLOCK, it will return (BLOCK index - currentBlock index) 
+
+step2: 
+    
+    As the result of the step1, we have the DISTANCE array with the distance of each requirement for the particular building.
+    From the DISTANCE array, find the longest distance, we should walk and store it as MIN_DISTANCE.
+
+step3:
+
+    If the previously stored MIN_DISTANCE is larger than the current found MIN_DISTANCE, we should alter the MIN_DISTANCE value to the current found MIN_DISTANCE.
+
+step4:
+
+    Repeat the steps from 1 to 3 until you finish all the blocks.
+
+step5:
+
+    Return the MIN_DISTANCE

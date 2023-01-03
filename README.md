@@ -50,3 +50,4 @@ reqs = ["gym", "school", "store"]
 
 Sample Output
 3 // at index 3, the farthest you'd have to walk to reach a gym, a school, or a store is 1 block; at any other index, you'd have to walk farther
+
